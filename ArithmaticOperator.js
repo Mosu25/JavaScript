@@ -1,41 +1,42 @@
+// Arithmatic operators : +, -, *, /, % , ++ , --
 // Comparison opertors : ==, ===, !=, >,>=,<,<=
-
-let std1 = 34;
-let std2 = 99;
-let std3 = 50;
-let std4 = 35;
-
-// = -> assign value
-// == -> check the exact values 
-// === -> check the exact values with data types
-
-
- let studentMark = 35;
- 
- if(studentMark == "35"){
-    console.log("Pass double == "); // == -> check the exact value
- }else{
-    console.log("Some issue");
- }
- 
-
- if(studentMark === "35"){  // === -> check the exact values with data types
-    console.log(" Pass");
- }else{
-    console.log("Some issue === ");
- }
+// Logical operator
+// Assignment operator
+// conditional operator
+// Ternary Operator
 
 
 
-let isPass = std1<=35;
-console.log(isPass);  // return boolean true or false
 
-let expectedCreteria = 35;
+let num1 = 20;
+let num2 = 10;
 
-if (std1 < expectedCreteria){
-    console.log("Fail");
-}else if(std1 > expectedCreteria){
-    console.log("Pass");
-}else{
-    console.log("Just pass");
-}
+let sum = num1 + num2;
+let sub = num1 - num2;
+let mul = num1 * num2;
+let div = num1 / num2;
+let mod = num1 % num2;
+let incrementPostfix = num1++;
+let decrementPostfix = num1--;
+let incrementPrefix = ++num1;
+let decrementPrefix = --num1;
+
+console.log("Add: "+ sum)
+console.log("Sub: "+ sub)
+console.log("Mul: "+ mul)
+console.log("Div: "+ div)
+console.log("mod: "+ mod)
+console.log(incrementPostfix); // returns the value before incrementing
+console.log(decrementPostfix); 
+console.log(incrementPrefix);  // return the incremented value
+console.log(decrementPrefix); 
+
+let a = 12;
+console.log("Increment: "+ a++); // here value 12, after this command executed it will change to 13
+console.log(a);
+
+let b = 12;
+console.log("Increment: "+  ++a); // here value 12, after this command executed it will change to 13
+console.log(a);
+
+
